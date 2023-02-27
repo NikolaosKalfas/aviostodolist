@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid lightblue;
+}
+
+input[type="text"]:hover {
+  border-color: darkblue;
+}
+
+.todo-app {
+  font-family: sans-serif;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 25px;
+  border: 1px solid grey;
+}
+
+/** add todo **/
+.add-todo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/** todo list **/
+.todo-list {
+  margin-top: 1rem;
+  text-align: left;
+  list-style: none;
+}
+
+/** todo item **/
+.todo-item {
+  font-family: monospace;
+  cursor: pointer;
+  line-height: 1.5;
+  padding: 10px;
+  border: 1px grey solid;
+  margin: 5px 0;
+  background-color: lightblue;
+}
+
+.rounded-border {
+  border-radius: 3px;
+}
+
+.error-message {
+  color: red;
+}
+
+@media (max-width: 561px) {
+  .todo-app {
+    margin: 20px;
+  }
+}
