@@ -17,13 +17,13 @@ export const submitAndUpdate = async (addNewTodo, submitted, value) => {
     const res = await addNewTodo(value);
     if (res.status === 201) submitted(value);
   } catch (err) {
-    if (error.response) {
-      console.error(error.response);
+    if (err.response) {
+      console.error(err.response);
       console.error("server responded");
-    } else if (error.request) {
+    } else if (err.request) {
       console.error("network error");
     } else {
-      console.error(error);
+      console.error(err);
     }
   }
 };
